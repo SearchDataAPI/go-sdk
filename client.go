@@ -2,7 +2,6 @@ package searchdata
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/google/go-querystring/query"
 	"io/ioutil"
 	"net/http"
@@ -52,9 +51,7 @@ func GetJson(o interface{}) (SearchResult, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	fmt.Println(string(body))
-
+	
 	decoded, err := decodeJSON(body)
 
 	if err != nil {
