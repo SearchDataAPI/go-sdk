@@ -21,7 +21,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/searchdataapi/go-sdk"
+	searchdata "github.com/searchdataapi/go-sdk"
 )
 
 func main()  {
